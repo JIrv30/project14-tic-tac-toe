@@ -33,7 +33,7 @@ export default function Game () {
     setXIsNext(step % 2===0)
   }
 
-  function renderMoves () {
+  const renderMoves = 
     history.map((_step,move)=>{
       const destination = move ? `Go to move ${move}` : 'Go to start'
       return (
@@ -45,8 +45,6 @@ export default function Game () {
         </li>
       )
     })
-    
-  }
 
   return (
     <>
@@ -55,7 +53,7 @@ export default function Game () {
       onClick={handleClick} />
       <div style={styles}>
         <p>{winner ? 'Winner:' + winner : 'Next Player:' + (xIsNext ? 'X': 'O')}</p>
-        {renderMoves()}
+        {renderMoves}
       </div>
     </>
   )
