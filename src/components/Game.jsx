@@ -1,8 +1,23 @@
+import Board from "./Board"
+
 export default function Game () {
+  
+  
+  function handleClick () {
+
+  }
+
+  function jumpTo () {
+
+  }
+
+  function renderMoves () {
+    
+  }
 
   return (
     <>
-    <h1> Game</h1>
+      <Board onClick={handleClick} />
     </>
   )
 }
